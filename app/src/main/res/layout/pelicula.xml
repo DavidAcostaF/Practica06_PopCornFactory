@@ -17,10 +17,11 @@
             android:src="@drawable/bones" />
 
         <TextView
-            android:id="@+id/tv_titulo"
+            android:id="@+id/tv_nombre_pelicula"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:textSize="15sp"
             android:text="BONES" />
     </LinearLayout>
 

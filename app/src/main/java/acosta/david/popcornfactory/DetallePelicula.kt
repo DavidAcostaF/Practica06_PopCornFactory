@@ -1,6 +1,8 @@
 package acosta.david.popcornfactory
 
 import android.os.Bundle
+import android.widget.ImageView
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -15,6 +17,14 @@ class DetallePelicula : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+
+
+        val bundle = intent.extras
+        if (bundle != null) {
+            findViewById<ImageView>(R.id.iv_pelicula_imagen).setImageResource(bundle.getInt("header"))
+            findViewById<TextView>(R.id.tv_nombre_pelicula).text = bundle.getString("titulo")
+            findViewById<TextView>(R.id.tv_pelicula_desc).text = bundle.getString("sinopsis")
         }
     }
 }
