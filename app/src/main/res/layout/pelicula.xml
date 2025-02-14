@@ -21,6 +21,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:textColor="@color/yellow"
             android:textSize="15sp"
             android:text="BONES" />
     </LinearLayout>
